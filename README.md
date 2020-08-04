@@ -40,7 +40,7 @@ Things you may want to cover:
 |------|----|-------|
 |user_id|integer|null: false, foreign_key :true|
 |group_id|integer|null: false, foreign_key :true|
-|comment|text|null: false|
+|comment|text||
 |image|text||
 
 ### Association
