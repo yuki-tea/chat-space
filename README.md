@@ -26,7 +26,7 @@ Things you may want to cover:
 - has_many :comments
 
 ## groupsテーブル
-|Column｜Type|Options|
+|Column|Type|Options|
 |------|----|-------|
 |group|string|null: false|
 |comment|text|null: false|
