@@ -117,22 +117,22 @@
   &__message-list {
     background-color: #fafafa;
     height: calc(100vh - 190px);
+    overflow: scroll;
     padding: 35px 0 0 40px;
     .Chat-main__field {
-      margin: 0 0 0 40px;
-        &-list {
-          display:flex;
-          &-name {
-            color:#333333;
-            font-size: 16pw;
-            font-weight: bold;
-          }
-          &-date {
-            color: #999999;
-            font-size: 12px;
-            padding: 0 0 0 10px;
-          }
+      display: flex;
+      &-list {
+        &-name {
+          color:#333333;
+          font-size: 16pw;
+          font-weight: bold;
         }
+        &-date {
+          color: #999999;
+          font-size: 12px;
+          padding: 0 0 0 10px;
+        }
+      }
         &-message {
           color: #434A54;
           font-size: 14px;
@@ -152,17 +152,11 @@
         height: 50px;
         width: 100%;
         border: none;
-        background-color: #ffffff;
-        
+        background-color: #ffffff;        
         color: #838181;
         position: relative;
         line-height: 50px;
-        input{
-          padding: 0 0 0 15px;
-          height: 50px;
-          width: 100%;
-          border: none;
-          }
+        padding: 0 0 0 15px;
         &-icon {
           height: 50px;
           width: 25px;
@@ -171,11 +165,11 @@
           right: 175px;  
           font-size: 25px;
           line-height: 50px;
-        input{
-        display: none;
         }
       }
-    }   
+      .Hidden {
+        display: none;
+      }
       &__icon-send {    
         background-color: #38aef0;
         color:#ffffff; 
@@ -190,3 +184,4 @@
     }
   }
 }
+
